@@ -1,10 +1,8 @@
-import { useState } from 'react'
-
+import { useState} from 'react'
 import './App.css'
 import BackgroundAnimation from './components/BackgroundAnimation'
 
 function App() {
-
   return (
     <>
       <div>
