@@ -1,13 +1,14 @@
 import { useState} from 'react'
+
 import './App.css'
-import BackgroundAnimation from './components/BackgroundAnimation'
+import Background from './components/Background'
 
 function App() {
   return (
     <>
       <div>
         <p>Hello its me</p>
-        <BackgroundAnimation></BackgroundAnimation>
+        <Background/>
       </div>
     </>
   )
