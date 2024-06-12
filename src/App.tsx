@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <div>
-        <p>Hello its me</p>
+        <p className='text-purple-700'>Hello its me</p>
         <Background/>
       </div>
     </>
