@@ -1,14 +1,18 @@
 import { useState} from 'react'
 
 import './App.css'
+import Layout from './components/Layout'
 import Background from './components/Background'
+import Navbar from './components/Navbar'
 
 function App() {
   return (
     <>
+    <Navbar/>
       <div>
-        <p className='text-purple-700'>Hello its me</p>
+        <Layout>
         <Background/>
+        </Layout>
       </div>
     </>
   )

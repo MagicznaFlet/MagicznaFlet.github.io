@@ -22,7 +22,7 @@ function Model(props:any){
 function BackgroundAnimation(props:any){
     return (
         <div>
-                <Canvas camera={{position:[5,5,-5],fov:25}}>
+                <Canvas camera={{position:[5,5,-2],fov:25}}>
                     <Suspense fallback={<FallbackComponent/>}/>
                     <Environment preset="city"/>
                     <ambientLight intensity={0.5}/>
