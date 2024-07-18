@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.light {
+    --background: 255, 255, 255;
+    --primary: 0, 0, 0;
+    --special: 255, 255, 255;
+}
+
+
+.dark {
+    --background: 32, 32, 32;
+    --primary: 255, 255, 255;
+    --special: 255, 255, 255;
+}

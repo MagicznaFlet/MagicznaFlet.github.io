@@ -1,6 +1,6 @@
 export default function Skills() {
     return (
-        <div className="w-full bg-gray-500 rounded">
+        <div className="w-full">
             <p>Skilled with Cpp,JS,Rust</p>
         </div>
     )
