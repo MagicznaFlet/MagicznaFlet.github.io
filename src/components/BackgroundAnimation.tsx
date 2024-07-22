@@ -1,14 +1,14 @@
-import { Suspense, useMemo, useRef } from "react"
+import { Suspense, } from "react"
 import { Canvas } from "@react-three/fiber"
-import { Environment, OrbitControls, useGLTF } from "@react-three/drei"
+import { Environment, OrbitControls, useGLTF, Html, useProgress } from "@react-three/drei"
 
 function FallbackComponent() {
+    const { progress } = useProgress()
     return (
         <>
-            <div>
-                <p>FallbackComponent</p>
-                <img src="/image.png" alt="Cat picture" />
-            </div>
+            <Html center className="text-primary">
+                {progress}
+            </Html>
         </>
     )
 }

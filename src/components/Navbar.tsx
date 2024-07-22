@@ -1,13 +1,8 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-function changeTheme() {
-    window.localStorage.theme = 'light'
-}
-
 export default function Navbar(props: any) {
-    const isExpanded = useState(false)
-    const initialTheme = document.body.classList
+    const [isExpanded, setIsExpanded] = useState(true)
     const [currentTheme, setCurrentTheme] = useState("dark")
 
     function changeTheme() {
@@ -20,23 +15,45 @@ export default function Navbar(props: any) {
         }
     }
 
+    function changeExpanded() {
+        if (isExpanded) {
+            setIsExpanded(false)
+        } else {
+            setIsExpanded(true)
+        }
+    }
+
     return (
-        <nav className="absolute md:sticky md:top-0  flex flex-col md:flex-row w-full justify-around items-center md:h-20  
-        bg-background text-primary ">
+        <nav className="sticky top-0 z-10 flex flex-col md:flex-row w-full justify-center items-center md:h-14 md:h-20  
+        bg-background/80 backdrop-blur-lg  text-primary">
             <div className="flex md:flex-row">
-                <div className="bg-blue-700 md:w-20 md:h-20">
-                    <img src="catimg.png" alt="Logo image" className="md:w-full md:h-full" />
-                </div>
-                <div className="bg-red-700 w-20 h-20 text-center">
+                <div className={isExpanded ? "w-20 h-20 text-center bg-red-700" : "w-20 h-20 text-center bg-blue-700"}>
                     <button onClick={changeTheme}>L/D</button>
                 </div>
+
+                <button onClick={changeExpanded} className='px-6'>
+                    <img src="hamburger.png" alt="Expand navbar icon" className='w-[40px] h-[40px] ' />
+                </button>
+
             </div>
-            <ul className="flex flex-col md:flex-row w-full md:w-auto md:gap-3 text-black-500">
-                <li className=" md:hover:bg-primary md:hover:text-background md:rounded-full"><Link to="/">Filip Urzoń</Link></li>
-                <li><Link to="/projects">Projects</Link></li>
-                <li><Link to="/skills">Skills</Link></li>
-                <li><Link to="/contact">Contact</Link></li>
+
+            {/* Desktop nav */}
+            <ul className={` hidden md:flex flex-col md:flex-row w-full md:w-auto md:gap-6 text-center`}>
+                <li className="py-20 border md:border-none md:px-0 "><Link to="/">Filip Urzoń</Link></li>
+                <li className="py-20 border md:border-none md:px-0 "><Link to="/skills">Skills</Link></li>
+                <li className="py-20 border md:border-none md:px-0 "><Link to="/contact">Contact</Link></li>
+                <li className="py-20 border md:border-none md:px-0 "><Link to="/projects">Projects</Link></li>
             </ul>
-        </nav>
+
+            {/* Mobile nav */}
+
+            <ul className={` block flex flex-col w-full text-center`}>
+                <li className="py-20 border md:border-none md:px-0 "><Link to="/">Filip Urzoń</Link></li>
+                <li className="py-20 border md:border-none md:px-0 "><Link to="/skills">Skills</Link></li>
+                <li className="py-20 border md:border-none md:px-0 "><Link to="/contact">Contact</Link></li>
+                <li className="py-20 border md:border-none md:px-0 "><Link to="/projects">Projects</Link></li>
+            </ul>
+
+        </nav >
     )
 }

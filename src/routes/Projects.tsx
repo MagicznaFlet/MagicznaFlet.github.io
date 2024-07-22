@@ -5,24 +5,30 @@ export default function Projects() {
             <p>Passionate about technology, programming and and databases. Ocasionally doing blender. I like books (especially Stephen's King and Dune series)
                 <p></p>
             </p>
-            <div className="w-full flex flex-row  flex-wrap justify-center w-full gap-8 ">
-                <div className="basis-1/3 bg-special min-h-[175px]">
-                    <img src="catimg.png" alt="" className="basis1/3 h-[175px] " />
+            <div className="w-full flex flex-col md:flex-row  flex-wrap items-center md:justify-center w-full md:gap-10">
+                <div className="w-[80%] md:w-[220px] min-h-[175px] text-center">
+                    <p className="bg-background">Text</p>
+                    <img src="catimg.png" alt="" className="w-full h-[175px] rounded-xl" />
                 </div>
-                <div className="basis-1/3 bg-special min-h-[175px]">
-                    <img src="catimg.png" alt="" className="basis1/3 h-[175px] " />
+                <div className="w-[80%] md:w-[220px] min-h-[175px] ">
+                    <p className="bg-background">Text</p>
+                    <img src="catimg.png" alt="" className="w-full h-[175px] rounded-xl" />
                 </div>
-                <div className="basis-1/3 bg-special min-h-[175px]">
-                    <img src="catimg.png" alt="" className="basis1/3 h-[175px] " />
+                <div className="w-[80%] md:w-[220px] min-h-[175px] ">
+                    <p className="bg-background">Text</p>
+                    <img src="catimg.png" alt="" className="w-full h-[175px] rounded-xl" />
                 </div>
-                <div className="basis-1/3 bg-special min-h-[175px]">
-                    <img src="catimg.png" alt="" className="basis1/3 h-[175px] " />
+                <div className="w-[80%] md:w-[220px] min-h-[175px]">
+                    <p className="bg-background">Text</p>
+                    <img src="catimg.png" alt="" className="w-full h-[175px] rounded-xl" />
                 </div>
-                <div className="basis-1/3 bg-special min-h-[175px]">
-                    <img src="catimg.png" alt="" className="basis1/3 h-[175px] " />
+                <div className="w-[80%] md:w-[220px] min-h-[175px] ">
+                    <p className="bg-background">Text</p>
+                    <img src="catimg.png" alt="" className="w-full h-[175px] rounded-xl" />
                 </div>
-                <div className="basis-1/3 bg-special min-h-[175px]">
-                    <img src="catimg.png" alt="" className="basis1/3 h-[175px] " />
+                <div className="w-[80%] md:w-[220px] min-h-[175px] ">
+                    <p className="bg-background">Text</p>
+                    <img src="catimg.png" alt="" className="w-full h-[175px] rounded-xl" />
                 </div>
             </div>
         </div>

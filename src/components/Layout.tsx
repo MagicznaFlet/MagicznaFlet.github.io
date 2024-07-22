@@ -5,11 +5,6 @@ import BackgroundAnimation from './BackgroundAnimation'
 import Navbar from './Navbar'
 
 export default function Layout(props: any) {
-    const [counter, setCounter] = useState(0)
-    function up() {
-        setCounter(counter + 1)
-    }
-
 
     // useEffect(() => {
     //     // localStorage.setItem("theme", "light")
@@ -28,12 +23,12 @@ export default function Layout(props: any) {
     return (
         <>
             <div className="flex flex-col items-center md:min-h-[100vh] bg-background">
-                <div className="flex flex-col items-center w-full md:max-w-[500px] h-full text-primary ">
-                    <Navbar />
+                <Navbar />
+                <div className="flex flex-col items-center w-full md:max-w-[500px] text-primary">
                     <BackgroundAnimation />
-                    <Outlet />
-                    <p>{counter}</p>
-                    <button onClick={up}>Counter</button>
+                    <main className="px-4 md:px-0">
+                        <Outlet />
+                    </main>
                 </div>
             </div>
         </>
