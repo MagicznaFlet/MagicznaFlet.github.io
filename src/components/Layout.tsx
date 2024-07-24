@@ -24,7 +24,7 @@ export default function Layout(props: any) {
         <>
             <div className="flex flex-col items-center md:min-h-[100vh] bg-background">
                 <Navbar />
-                <div className="flex flex-col items-center w-full md:max-w-[500px] text-primary">
+                <div className="flex flex-col w-full md:max-w-[500px] text-primary">
                     <BackgroundAnimation />
                     <main className="px-4 md:px-0">
                         <Outlet />
