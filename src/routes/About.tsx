@@ -1,9 +1,12 @@
 import { Helmet } from 'react-helmet'
-
+import { animate, motion } from 'framer-motion'
 
 export default function About() {
     return (
-        <>
+        <motion.div
+            initial={{ y: 50 }}
+            animate={{ y: 0 }}
+        >
             <Helmet>
                 <title>Homepage - Filip Urzoń</title>
                 <meta name="description" content="Filip Urzoń personal website, passionate about technology." />
@@ -16,10 +19,10 @@ export default function About() {
             <div className="">
                 <h1 className="text-3xl ">About me</h1>
                 <p>Passionate about web development, programming and databases. Currenly tinkering with React, Express and ASM_86.
-                    Ocasionally doing blender. I like fantasy books (especially Dark Tower and Dune series)
+                    Ocasionally doing blender. I like reading books (especially Dark Tower and Dune series)
                     and drinking unhealthy amounts of coffee. Owner of 4 ducks.
                 </p>
             </div>
-        </>
+        </motion.div>
     )
 }

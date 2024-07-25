@@ -1,8 +1,13 @@
 import { Helmet } from "react-helmet"
+import { motion } from 'framer-motion'
 
 export default function Skills() {
     return (
-        <>
+        <motion.div
+            initial={{ y: 50 }}
+            animate={{ y: 0 }}
+
+        >
             <Helmet>
                 <title>Skills - Filip Urzoń</title>
                 <meta name="description" content="Skills" />
@@ -12,7 +17,7 @@ export default function Skills() {
                 <h1 className="font-mono text-3xl">Skills</h1>
                 <p>Skilled with Cpp,JS,Rust</p>
             </div>
-        </>
+        </motion.div>
     )
 
 }

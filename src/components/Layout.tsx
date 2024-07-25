@@ -1,10 +1,9 @@
-import { useState, useEffect } from "react"
 import { Outlet } from "react-router-dom"
 
 import BackgroundAnimation from './BackgroundAnimation'
 import Navbar from './Navbar'
 
-export default function Layout(props: any) {
+export default function Layout() {
 
     // useEffect(() => {
     //     // localStorage.setItem("theme", "light")

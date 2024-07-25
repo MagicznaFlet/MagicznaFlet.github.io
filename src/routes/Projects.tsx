@@ -1,8 +1,12 @@
 import { Helmet } from "react-helmet"
+import { motion } from 'framer-motion'
 
 export default function Projects() {
     return (
-        <>
+        <motion.div
+            initial={{ y: 50 }}
+            animate={{ y: 0 }}
+        >
             <Helmet>
                 <title>Projects - Filip Urzoń</title>
                 <meta name="description" content="Projects"></meta>
@@ -40,6 +44,6 @@ export default function Projects() {
                     </div>
                 </div>
             </div>
-        </>
+        </motion.div>
     )
 }
