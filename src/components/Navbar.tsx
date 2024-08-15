@@ -33,7 +33,7 @@ export default function Navbar() {
                     <AnimatePresence mode="wait">
                         {currentTheme == 'dark' ?
                             <motion.div className="w-full h-full p-3 bg-lime-200 rounded-lg border-2 border-black"
-                                initial={{ y: 20, opacity: 0 }}
+                                initial={{ y: 20, opacity: 1 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ duration: 0.2 }}
                                 exit={{ y: 20, opacity: 0 }}
@@ -93,7 +93,6 @@ export default function Navbar() {
                 <Link to="/projects" onClick={changeExpanded}><li className="py-20 border md:border-none md:px-0 ">Projects</li></Link>
                 <Link to="/skills" onClick={changeExpanded}><li className="py-20 border md:border-none md:px-0 ">Skills</li></Link>
                 <Link to="/contact" onClick={changeExpanded}><li className="py-20 border md:border-none md:px-0 ">Contact</li></Link>
-
             </ul>
 
         </nav >

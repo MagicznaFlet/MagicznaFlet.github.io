@@ -8,9 +8,29 @@
     --special: 255, 255, 255;
 }
 
-
 .dark {
     --background: 32, 32, 32;
     --primary: 255, 255, 255;
     --special: 255, 255, 255;
 }
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+bodu::-webkit-scrollbar-button {
+    background-color: red;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(var(--background));
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(var(--primary));
+}
+
+/* body {
+    scrollbar-width: thin; 
+    scrollbar-color: blue orange;
+} */

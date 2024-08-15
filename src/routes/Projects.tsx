@@ -15,25 +15,27 @@ export default function Projects() {
 
             <h1 className="text-3xl ">Projects</h1>
             <h2>
-                Stuff that i make
+                Stuff i've been doing
             </h2>
-            <div className="w-full flex flex-col md:flex-row  flex-wrap items-center md:justify-center md:gap-10">
-                <div className="text-center mt-5 mb-5 w-full md:max-w-[220px]">
-                    <div className="w-full md:w-[220px] md:max-h-[175px] h-auto">
-                        <img src="catimg.png" alt="Yelpcamp" className="w-full h-auto object-cover rounded-xl" />
-                    </div>
+            <div className="w-full flex flex-col md:flex-row  flex-wrap items-center md:justify-center md:gap-5">
+                <div className="text-center mt-5 w-full md:max-w-[220px]">
+                    <img src="catimg.png" alt="Yelpcamp image" className="w-full md:max-h-[175px] h-auto rounded-xl hover:opacity-50" />
                     <p className="bg-background">YelpCamp</p>
                 </div>
-                <div className="text-center mt-5 mb-5 w-full md:max-w-[220px]">
-                    <div className="w-full md:w-[220px] md:max-h-[175px] h-auto">
-                        <img src="catimg.png" alt="Yelpcamp" className="w-full h-auto object-cover rounded-xl" />
-                    </div>
+                <div className="text-center mt-5 w-full md:max-w-[220px]">
+                    <img src="catimg.png" alt="Algera image" className="w-full md:max-h-[175px] h-auto rounded-xl" />
+                    <p className="bg-background">Algera</p>
+                </div>
+                <div className="text-center mt-5 w-full md:max-w-[220px]">
+                    <img src="catimg.png" alt="Yelpcamp" className="w-full md:max-h-[175px] h-auto rounded-xl" />
                     <p className="bg-background">YelpCamp</p>
                 </div>
-                <div className="text-center mt-5 mb-5 w-full md:max-w-[220px]">
-                    <div className="w-full md:w-[220px] md:max-h-[175px] h-auto">
-                        <img src="catimg.png" alt="Yelpcamp" className="w-full h-auto object-cover rounded-xl" />
-                    </div>
+                <div className="text-center mt-5 w-full md:max-w-[220px]">
+                    <img src="catimg.png" alt="Algera image" className="w-full md:max-h-[175px] h-auto rounded-xl" />
+                    <p className="bg-background">Algera</p>
+                </div>
+                <div className="text-center mt-5 w-full md:max-w-[220px]">
+                    <img src="catimg.png" alt="Yelpcamp" className="w-full md:max-h-[175px] h-auto rounded-xl" />
                     <p className="bg-background">YelpCamp</p>
                 </div>
 

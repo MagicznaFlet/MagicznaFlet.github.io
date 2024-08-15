@@ -1,5 +1,4 @@
 import { Outlet } from "react-router-dom"
-
 import BackgroundAnimation from './BackgroundAnimation'
 import Navbar from './Navbar'
 
@@ -21,15 +20,15 @@ export default function Layout() {
 
     return (
         <>
-            <div className="flex flex-col items-center md:min-h-[100vh] bg-background">
+            <div className="flex flex-col items-center min-h-[100vh] bg-background">
                 <Navbar />
-                <div className="flex flex-col w-full md:max-w-[500px] text-primary">
+                <div className="flex flex-col w-full mt-20 max-w-[500px] text-primary">
                     <BackgroundAnimation />
                     <main className="px-4 md:px-0">
                         <Outlet />
                     </main>
                 </div>
-            </div>
+            </div >
         </>
     )
 }

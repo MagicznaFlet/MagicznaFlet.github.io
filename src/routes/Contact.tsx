@@ -6,6 +6,7 @@ export default function Contact() {
         <motion.div
             initial={{ y: 50 }}
             animate={{ y: 0 }}
+
         >
             <Helmet>
                 <title>Contact - Filip Urzoń</title>

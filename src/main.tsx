@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+
 import './index.css'
 import About from './routes/About.tsx'
 import Layout from './components/Layout.tsx'
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
         path: '/contact',
         element: <Contact />,
       },
+      {
+        path: '*',
+        element: <NotFound />
+      }
     ]
   },
 

@@ -6,7 +6,6 @@ export default function Skills() {
         <motion.div
             initial={{ y: 50 }}
             animate={{ y: 0 }}
-
         >
             <Helmet>
                 <title>Skills - Filip Urzoń</title>
