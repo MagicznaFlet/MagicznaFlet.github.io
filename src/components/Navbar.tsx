@@ -29,7 +29,7 @@ export default function Navbar() {
         bg-background/80 backdrop-blur-lg text-primary">
             <div className="w-full md:w-auto flex justify-end md:justify-around">
 
-                <button className="w-14 h-14 mr-1 " onClick={changeTheme}>
+                <button className="w-14 h-14 mr-2 md:mr-10" onClick={changeTheme}>
                     <AnimatePresence mode="wait">
                         {currentTheme == 'dark' ?
                             <motion.div className="w-full h-full p-3 bg-lime-200 rounded-lg border-2 border-black"
@@ -37,7 +37,7 @@ export default function Navbar() {
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ duration: 0.2 }}
                                 exit={{ y: 20, opacity: 0 }}
-                                key={'dark'} >
+                                key={crypto.randomUUID()} >
                                 <div className="bg-[url('/night.png')] w-full h-full bg-cover"></div>
                             </motion.div>
                             :
@@ -46,16 +46,16 @@ export default function Navbar() {
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ duration: 0.2 }}
                                 exit={{ y: 20, opacity: 0 }}
-                                key={'light'} >
+                                key={crypto.randomUUID()} >
                                 <div className="bg-[url('/light.png')] w-full h-full bg-cover"></div>
                             </motion.div>
                         }
                     </AnimatePresence>
                 </button>
-                <button onClick={changeExpanded} className="w-20 px-6 md:hidden">
+                <button onClick={changeExpanded} className="w-18 mx-5 md:hidden">
                     <AnimatePresence mode="wait">
                         {isExpanded ?
-                            <motion.svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 24 22" key={3}
+                            <motion.svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 24 22" className="border border-indigo" key={3}
                                 initial={{ rotate: "0deg", scale: 0 }}
                                 animate={{ rotate: "180deg", scale: 1, transition: { duration: 0.3 } }}
                                 exit={{ rotate: "0deg", scale: 0, transition: { duration: 0.3 } }}>
@@ -63,7 +63,7 @@ export default function Navbar() {
                                 <motion.rect width="24" height="2" x="4.222" y="2" fill="#000" rx="1" transform="rotate(45 4.222 2)" />
                             </motion.svg>
                             :
-                            <motion.svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 24 22" key={4}
+                            <motion.svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 24 22" className="border border-indigo" key={4}
                                 initial={{ rotate: "0deg", scale: 0 }}
                                 animate={{ rotate: "180deg", scale: 1, transition: { duration: 0.3 } }}
                                 exit={{ rotate: "0deg", scale: 0, transition: { duration: 0.3 } }}>

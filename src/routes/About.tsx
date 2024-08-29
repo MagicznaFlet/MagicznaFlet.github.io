@@ -24,7 +24,7 @@ export default function About() {
             <div className="">
                 <h1 className="text-3xl ">About me</h1>
                 <p>Passionate about web development, programming and databases. Currenly tinkering with React, Express and ASM_86.
-                    Occasionally doing blender. I like reading books (especially Dark Tower and Dune series)
+                    Ocasionally doing blender. I like reading books (especially Dark Tower and Dune series)
                     and drinking unhealthy amounts of coffee. Owner of 4 ducks.
                 </p>
             </div>

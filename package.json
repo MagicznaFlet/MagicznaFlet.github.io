@@ -12,6 +12,7 @@
   "dependencies": {
     "@react-three/drei": "^9.106.0",
     "@react-three/fiber": "^8.16.8",
+    "@react-three/postprocessing": "^2.16.2",
     "@types/react-helmet": "^6.1.11",
     "@types/three": "^0.165.0",
     "framer-motion": "^11.3.17",
