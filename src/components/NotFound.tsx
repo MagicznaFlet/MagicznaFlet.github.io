@@ -7,8 +7,9 @@ export default function NotFound() {
             <meta name="description" content="404 Error" />
             <meta name="keywords" content="404, not found" />
         </Helmet>
-        <p>404 - Page Not Found</p>
+        <div bg-primary>
 
+        </div>
     </>
     )
 }

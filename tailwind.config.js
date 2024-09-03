@@ -9,7 +9,9 @@ export default {
       colors: {
         background: "rgba(var(--background))",
         primary: "rgba(var(--primary))",
+        horizontalRule: "rgba(var(--horizontal-rule))",
         special: "rgb(var(--special))",
+        link: "rgb(var(--link))"
 
       }
     },

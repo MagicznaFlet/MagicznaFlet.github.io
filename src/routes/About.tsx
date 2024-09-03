@@ -18,7 +18,7 @@ export default function About() {
             </Helmet>
 
 
-            <div className=" w-full my-3 py-2 text-center text-special bg-gray-500 rounded-lg ">
+            <div className=" w-full my-3 py-2 text-center text-special bg-fill rounded-lg ">
                 <p>Hi im Filip, web developer from Poland</p>
             </div>
             <div className="">

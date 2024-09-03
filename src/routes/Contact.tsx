@@ -13,8 +13,9 @@ export default function Contact() {
                 <meta name="description" content="Contact" />
                 <meta name='keywords' content="Filip Urzoń, skills, " />
             </Helmet>
-            <div className="w-full">
-                <p>885724414</p>
+            <div className="w-full font-mono text-3xl font-bold">
+                <p>Contact</p>
+                <hr className="border-horizontalRule mt-1 mb-4" />
             </div>
         </motion.div>
     )
