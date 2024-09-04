@@ -11,7 +11,8 @@ export default {
         primary: "rgba(var(--primary))",
         horizontalRule: "rgba(var(--horizontal-rule))",
         special: "rgb(var(--special))",
-        link: "rgb(var(--link))"
+        fill: "rgba(var(--fill))",
+        link: "rgb(var(--link))",
 
       }
     },

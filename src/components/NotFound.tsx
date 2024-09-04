@@ -7,8 +7,9 @@ export default function NotFound() {
             <meta name="description" content="404 Error" />
             <meta name="keywords" content="404, not found" />
         </Helmet>
-        <div bg-primary>
-
+        <div className="w-full my-3 py-2 text-center bg-fill rounded-lg">
+            <p className="text-[200px] text-link">404</p>
+            <button className="bg-link text-primary rounded-lg p-2">Back to Home</button>
         </div>
     </>
     )
