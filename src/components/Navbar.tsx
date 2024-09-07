@@ -24,20 +24,20 @@ export default function Navbar() {
             </div>
 
             {/* Desktop nav */}
-            <ul className="hidden md:flex flex-col md:flex-row w-full md:w-auto md:gap-6 text-center">
-                <li className="py-20 border md:border-none md:px-0 "><Link to="/">Filip Urzoń</Link></li>
-                <li className="py-20 border md:border-none md:px-0 "><Link to="/projects">Projects</Link></li>
-                <li className="py-20 border md:border-none md:px-0 "><Link to="/skills">Skills</Link></li>
-                <li className="py-20 border md:border-none md:px-0 "><Link to="/contact">Contact</Link></li>
+            <ul className="hidden md:flex md:flex-row md:w-auto md:gap-6 md:mr-10 text-center">
+                <li className="md:border-none md:px-0 "><Link to="/">Filip Urzoń</Link></li>
+                <li className="md:border-none md:px-0 "><Link to="/projects">Projects</Link></li>
+                <li className="md:border-none md:px-0 "><Link to="/skills">Skills</Link></li>
+                {/* <li className="py-20 border md:border-none md:px-0 "><Link to="/contact">Contact</Link></li> */}
             </ul>
 
             {/* Mobile nav */}
 
-            <ul className={isExpanded ? "flex flex-col md:hidden w-full text-center" : "hidden"}>
+            <ul className={isExpanded ? "flex flex-col md:hidden mt-2 w-full text-center" : "hidden"}>
                 <Link to="/" onClick={changeExpanded}><li className="py-20 border md:border-none md:px-0 ">Filip Urzoń</li></Link>
                 <Link to="/projects" onClick={changeExpanded}><li className="py-20 border md:border-none md:px-0 ">Projects</li></Link>
                 <Link to="/skills" onClick={changeExpanded}><li className="py-20 border md:border-none md:px-0 ">Skills</li></Link>
-                <Link to="/contact" onClick={changeExpanded}><li className="py-20 border md:border-none md:px-0 ">Contact</li></Link>
+                {/* <Link to="/contact" onClick={changeExpanded}><li className="py-20 border md:border-none md:px-0 ">Contact</li></Link> */}
             </ul>
 
         </nav >

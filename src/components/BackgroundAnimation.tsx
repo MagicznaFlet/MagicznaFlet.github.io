@@ -1,7 +1,6 @@
 import { Suspense, } from "react"
 import { Canvas } from "@react-three/fiber"
 import { Environment, OrbitControls, useGLTF, Html, useProgress } from "@react-three/drei"
-// import { Bloom, EffectComposer } from "@react-three/postprocessing"
 
 function FallbackComponent() {
     const { progress } = useProgress()
@@ -14,8 +13,8 @@ function FallbackComponent() {
     )
 }
 
-function Model(props: any) {
-    const backgroundModel = useGLTF('/axe.glb')
+function Model(props: { position: [number, number, number], rotation: [number, number, number], scale: number }) {
+    const backgroundModel = useGLTF('/monster.glb')
     return <primitive object={backgroundModel.scene} {...props} />;
 }
 
@@ -26,7 +25,6 @@ function BackgroundAnimation() {
                 <Suspense fallback={<FallbackComponent />} />
                 <Environment preset="city" />
                 <ambientLight intensity={0.5} />
-                {/* <Model position={[-0.1, -0.2, 0]} rotation={[1.55, 0, 0]} scale={0.4} /> */}
                 <Model position={[-0.1, -0.2, 0]} rotation={[0, Math.PI / 2, 0]} scale={0.4} />
                 <OrbitControls minPolarAngle={Math.PI / 2.5} maxPolarAngle={Math.PI / 2.5}
                     autoRotate={true} autoRotateSpeed={2.5} />

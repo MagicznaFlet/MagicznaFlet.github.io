@@ -18,7 +18,7 @@ const ThemeButton = memo(function ThemeButton({ currentTheme, setCurrentTheme }:
     }
 
     return (
-        <button className="w-14 h-14 mr-2 md:mr-10" onClick={changeTheme}>
+        <button className="w-14 h-14 mr-2 md:mr-20 " onClick={changeTheme}>
             <AnimatePresence mode="wait">
                 {currentTheme == 'dark' ?
                     <motion.div className="w-full h-full p-3 bg-link rounded-lg"
@@ -30,7 +30,7 @@ const ThemeButton = memo(function ThemeButton({ currentTheme, setCurrentTheme }:
                         <div className="bg-[url('/night.png')] w-full h-full bg-cover"></div>
                     </motion.div>
                     :
-                    <motion.div className="w-full h-full p-3 bg-fill rounded-lg  "
+                    <motion.div className="w-full h-full p-3 border-2 border-grey-200 bg-background hover:bg-fill rounded-lg"
                         initial={{ y: 20, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.2 }}

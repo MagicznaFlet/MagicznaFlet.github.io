@@ -12,6 +12,8 @@ export default {
         horizontalRule: "rgba(var(--horizontal-rule))",
         special: "rgb(var(--special))",
         fill: "rgba(var(--fill))",
+        borderBottom: "rgba(var(--borderBottom))",
+        hamburgerBorder: "rgba(var(--hamburgerBorder))",
         link: "rgb(var(--link))",
 
       }

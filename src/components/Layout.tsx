@@ -24,10 +24,11 @@ export default function Layout() {
                 <Navbar />
                 <div className="flex flex-col w-full mt-20 max-w-[500px] text-primary">
                     <BackgroundAnimation />
-                    <main className="px-4 md:px-0">
+                    <main className="px-4 md:px-0 pb-10">
                         <Outlet />
                     </main>
                 </div>
+
             </div >
         </>
     )

@@ -13,32 +13,31 @@ export default function Projects() {
                 <meta name='keywords' content="Filip Urzoń, projects " />
             </Helmet>
 
-            <h1 className="w-full font-mono text-3xl font-bold">Projects</h1>
-            <hr className="border-horizontalRule mt-1 mb-4" />
+            <h1 className="inline font-mono text-3xl font-bold border-b-4 border-borderBottom ">Projects</h1>
 
-            <h2>
-                Stuff i've been doing
-            </h2>
-            <div className="w-full flex flex-col md:flex-row  flex-wrap items-center md:justify-center md:gap-5">
-                <div className="text-center mt-5 w-full md:max-w-[220px]">
-                    <img src="catimg.png" alt="Yelpcamp image" className="w-full md:max-h-[175px] h-auto rounded-xl hover:opacity-50" />
-                    <p className="bg-background">YelpCamp</p>
+            <div className="w-full mt-5 flex flex-col md:flex-row  flex-wrap items-center md:justify-center gap-y-8 md:gap-8">
+                <div className="text-center mt-5 w-full md:max-w-[220px] md:h-[200px] ">
+                    <a href="https://github.com/MagicznaFlet/YelpCamp" target="_blank">
+                        <img src="yelpcamp.png" alt="Yelpcamp" title="Yelpcamp" className="w-full h-auto md:h-[120px] rounded-xl hover:opacity-50 object-cover" />
+                    </a>
+                    <h2 className="bg-background font-bold text-lg mt-2">YelpCamp</h2>
+                    <p className="w-full">Project finishing Colt Steele
+                        <a href="https://www.udemy.com/course/the-web-developer-bootcamp/" target="_blank" className="text-link"> Bootcamp</a>
+                    </p>
                 </div>
-                <div className="text-center mt-5 w-full md:max-w-[220px]">
-                    <img src="catimg.png" alt="Algera image" className="w-full md:max-h-[175px] h-auto rounded-xl" />
-                    <p className="bg-background">Algera</p>
+
+                <div className="text-center mt-5 w-full md:max-w-[220px] md:h-[200px]">
+                    <img src="desktopprojecter.jpg" alt="Desktop Projecter" title="Desktop Projecter"
+                        className="w-full h-auto md:h-[120px] md:max-h-[150px] rounded-xl hover:opacity-50 object-cover" />
+                    <h2 className="bg-background font-bold text-lg mt-2">Desktop Projecter</h2>
+                    <p>Desktop app displaying wallpapers supporting gif,avi formats (in progress)</p>
                 </div>
-                <div className="text-center mt-5 w-full md:max-w-[220px]">
-                    <img src="catimg.png" alt="Yelpcamp" className="w-full md:max-h-[175px] h-auto rounded-xl" />
-                    <p className="bg-background">YelpCamp</p>
-                </div>
-                <div className="text-center mt-5 w-full md:max-w-[220px]">
-                    <img src="catimg.png" alt="Algera image" className="w-full md:max-h-[175px] h-auto rounded-xl" />
-                    <p className="bg-background">Algera</p>
-                </div>
-                <div className="text-center mt-5 w-full md:max-w-[220px]">
-                    <img src="catimg.png" alt="Yelpcamp" className="w-full md:max-h-[175px] h-auto rounded-xl" />
-                    <p className="bg-background">YelpCamp</p>
+
+                <div className="text-center mt-5 w-full md:max-w-[220px] md:h-[200px]">
+                    <img src="algonest.png" alt="AlgoNest" title="AlgoNest"
+                        className="w-full h-auto md:h-[120px] rounded-xl hover:opacity-50 object-cover" />
+                    <h2 className="bg-background font-bold text-lg mt-2">AlgoNest.io</h2>
+                    <p>Algorithmic/Code learning app (in progress)</p>
                 </div>
 
             </div>

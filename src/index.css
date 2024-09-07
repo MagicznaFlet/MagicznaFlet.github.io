@@ -4,11 +4,13 @@
 
 
 .light {
-    --background: 255, 245, 230;
+    --background: 240, 231, 219;
     --primary: 10, 10, 10;
     --horizontal-rule: 50, 50, 50;
     --special: 10, 10, 10;
-    --fill: 255, 255, 255;
+    --fill: 250, 250, 245;
+    --borderBottom: 50, 50, 50;
+    --hamburgerBorder: 229, 231, 235;
     --link: 100, 200, 255;
 }
 
@@ -18,6 +20,8 @@
     --horizontal-rule: 50, 50, 50;
     --special: 255, 255, 255;
     --fill: 50, 50, 50;
+    --borderBottom: 50, 50, 50;
+    --hamburgerBorder: 50, 50, 50;
     --link: 0, 300, 80;
 }
 

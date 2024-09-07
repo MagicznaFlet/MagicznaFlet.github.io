@@ -15,11 +15,11 @@ const HamburgerButton = memo(function HamburgerButton({ isExpanded, setIsExpande
     }
 
     return (
-        <button onClick={changeExpanded} className="w-14 h-14 mr-2 bg-fill rounded-lg md:hidden">
+        <button onClick={changeExpanded} className="w-14 h-14 mr-2 bg-background hover:bg-fill rounded-lg md:hidden border-2 border-hamburgerBorder ">
             <AnimatePresence mode="wait">
                 {isExpanded ?
                     <motion.svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none" viewBox="0 0 24 22"
-                        className="bg-fill m-auto" key={generateUUID()}
+                        className="m-auto " key={generateUUID()}
                         initial={{ rotate: "0deg", scale: 0 }}
                         animate={{ rotate: "180deg", scale: 1, transition: { duration: 0.3 } }}
                         exit={{ rotate: "0deg", scale: 0, transition: { duration: 0.3 } }}>
@@ -28,7 +28,7 @@ const HamburgerButton = memo(function HamburgerButton({ isExpanded, setIsExpande
                     </motion.svg>
                     :
                     <motion.svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none" viewBox="0 0 24 22"
-                        className="bg-fill m-auto" key={generateUUID()}
+                        className="m-auto" key={generateUUID()}
                         initial={{ rotate: "0deg", scale: 0 }}
                         animate={{ rotate: "180deg", scale: 1, transition: { duration: 0.3 } }}
                         exit={{ rotate: "0deg", scale: 0, transition: { duration: 0.3 } }}>
