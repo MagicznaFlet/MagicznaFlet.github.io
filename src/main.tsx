@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { HeadProvider } from 'react-head'
 
 import './index.css'
 import About from './routes/About.tsx'
@@ -8,7 +9,6 @@ import Layout from './components/Layout.tsx'
 import NotFound from './components/NotFound.tsx'
 import Projects from './routes/Projects.tsx'
 import Skills from './routes/Skills.tsx'
-import Contact from './routes/Contact.tsx'
 
 const router = createBrowserRouter([
   {
@@ -27,14 +27,6 @@ const router = createBrowserRouter([
       {
         path: '/skills',
         element: <Skills />,
-      },
-      {
-        path: '/contact',
-        element: <Contact />,
-      },
-      {
-        path: '*',
-        element: <NotFound />
       }
     ]
   },
@@ -43,6 +35,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <HeadProvider>
+      <RouterProvider router={router} />
+    </HeadProvider>
   </React.StrictMode>,
 )

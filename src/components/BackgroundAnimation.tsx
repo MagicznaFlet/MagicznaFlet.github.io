@@ -14,14 +14,14 @@ function FallbackComponent() {
 }
 
 function Model(props: { position: [number, number, number], rotation: [number, number, number], scale: number }) {
-    const backgroundModel = useGLTF('/monster.glb')
+    const backgroundModel = useGLTF('monster.glb')
     return <primitive object={backgroundModel.scene} {...props} />;
 }
 
 function BackgroundAnimation() {
     return (
-        <div className="w-full h-[40vh]">
-            <Canvas camera={{ position: [5, 5, -2], fov: 25 }}>
+        <div className="w-full h-[30vh] md:h-[40vh]">
+            <Canvas camera={{ position: [5, 5, -5], fov: 25 }}>
                 <Suspense fallback={<FallbackComponent />} />
                 <Environment preset="city" />
                 <ambientLight intensity={0.5} />

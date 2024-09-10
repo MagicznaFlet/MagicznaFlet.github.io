@@ -1,17 +1,15 @@
-import { Helmet } from "react-helmet"
 import { motion } from 'framer-motion'
+import { Title, Meta } from 'react-head'
 
 export default function Projects() {
     return (
         <motion.div
             initial={{ y: 50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
+            animate={{ y: -50, opacity: 1 }}
         >
-            <Helmet>
-                <title>Projects - Filip Urzoń</title>
-                <meta name="description" content="Projects" />
-                <meta name='keywords' content="Filip Urzoń, projects " />
-            </Helmet>
+            <Title>Projects - Filip Urzoń</Title>
+            <Meta name="description" content="Projects" />
+            <Meta name='keywords' content="Filip Urzoń, projects " />
 
             <h1 className="inline font-mono text-3xl font-bold border-b-4 border-borderBottom ">Projects</h1>
 

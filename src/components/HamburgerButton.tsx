@@ -15,7 +15,8 @@ const HamburgerButton = memo(function HamburgerButton({ isExpanded, setIsExpande
     }
 
     return (
-        <button onClick={changeExpanded} className="w-14 h-14 mr-2 bg-background hover:bg-fill rounded-lg md:hidden border-2 border-hamburgerBorder ">
+        <button onClick={changeExpanded} className="w-14 h-14 mr-2 bg-background hover:bg-fill rounded-lg md:hidden border-2 border-hamburgerBorder "
+            aria-label="Open/Close hamburger">
             <AnimatePresence mode="wait">
                 {isExpanded ?
                     <motion.svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none" viewBox="0 0 24 22"

@@ -40,8 +40,3 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background-color: rgba(var(--primary));
 }
-
-/* body {
-    scrollbar-width: thin; 
-    scrollbar-color: blue orange;
-} */

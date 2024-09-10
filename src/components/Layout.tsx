@@ -17,7 +17,6 @@ export default function Layout() {
 
     //     console.log("test")
     // })
-
     return (
         <>
             <div className="flex flex-col items-center min-h-[100vh] bg-background">

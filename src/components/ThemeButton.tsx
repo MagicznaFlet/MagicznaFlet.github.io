@@ -18,7 +18,8 @@ const ThemeButton = memo(function ThemeButton({ currentTheme, setCurrentTheme }:
     }
 
     return (
-        <button className="w-14 h-14 mr-2 md:mr-20 " onClick={changeTheme}>
+        <button className="w-14 h-14 mr-2 md:mr-20 " onClick={changeTheme}
+            aria-label="Change theme">
             <AnimatePresence mode="wait">
                 {currentTheme == 'dark' ?
                     <motion.div className="w-full h-full p-3 bg-link rounded-lg"

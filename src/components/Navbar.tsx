@@ -17,7 +17,7 @@ export default function Navbar() {
 
     return (
         <nav className="fixed top-0 z-10 flex flex-col md:flex-row w-full justify-center items-center md:h-14 md:h-20  
-        bg-background/80 backdrop-blur-lg text-primary">
+        bg-background/80 backdrop-blur-sm text-primary">
             <div className="w-full md:w-auto flex justify-end md:justify-around">
                 <ThemeButton currentTheme={currentTheme} setCurrentTheme={setCurrentTheme} />
                 <HamburgerButton isExpanded={isExpanded} setIsExpanded={setIsExpanded} />

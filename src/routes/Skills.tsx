@@ -1,19 +1,18 @@
-import { Helmet } from "react-helmet"
 import { motion } from 'framer-motion'
+import { Title, Meta } from 'react-head'
 
 import IconBox from "../components/IconBox"
 
 export default function Skills() {
     return (
         <motion.div
-            initial={{ y: 50 }}
-            animate={{ y: 0 }}
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: -50, opacity: 1 }}
         >
-            <Helmet>
-                <title>Skills - Filip Urzoń</title>
-                <meta name="description" content="Skills" />
-                <meta name='keywords' content="Filip Urzoń, skills" />
-            </Helmet>
+            <Title>Skills - Filip Urzoń</Title>
+            <Meta name="description" content="Skills" />
+            <Meta name='keywords' content="Filip Urzoń, skills" />
+
             <div className="w-full ">
                 <h1 className="inline font-mono text-3xl font-bold border-b-4 border-borderBottom">Skills</h1>
 
