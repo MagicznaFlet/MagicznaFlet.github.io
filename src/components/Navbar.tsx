@@ -33,7 +33,7 @@ export default function Navbar() {
 
             {/* Mobile nav */}
 
-            <ul className={isExpanded ? "flex flex-col md:hidden mt-2 w-full text-center" : "hidden"}>
+            <ul className={isExpanded ? "flex flex-col md:hidden mt-2 w-full text-2xl text-center bg-background" : "hidden"}>
                 <Link to="/" onClick={changeExpanded}><li className="py-20 border md:border-none md:px-0 ">Filip Urzoń</li></Link>
                 <Link to="/projects" onClick={changeExpanded}><li className="py-20 border md:border-none md:px-0 ">Projects</li></Link>
                 <Link to="/skills" onClick={changeExpanded}><li className="py-20 border md:border-none md:px-0 ">Skills</li></Link>

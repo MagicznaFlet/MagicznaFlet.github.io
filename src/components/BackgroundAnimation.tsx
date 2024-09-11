@@ -1,4 +1,4 @@
-import { Suspense, } from "react"
+import { Suspense } from "react"
 import { Canvas } from "@react-three/fiber"
 import { Environment, OrbitControls, useGLTF, Html, useProgress } from "@react-three/drei"
 
@@ -17,6 +17,7 @@ function Model(props: { position: [number, number, number], rotation: [number, n
     const backgroundModel = useGLTF('monster.glb')
     return <primitive object={backgroundModel.scene} {...props} />;
 }
+
 
 function BackgroundAnimation() {
     return (

@@ -1,19 +1,40 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
+import compression from 'vite-plugin-compression'
+import { imagetools } from 'vite-imagetools'
+
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(),
+  compression({
+    algorithm: 'brotliCompress',
+    threshold: 1024,
+  }),
+  imagetools({
+
+  })],
+  mode: 'production',
+  base: '/react-portfolio/',
+  // server: {
+  //   warmup: {
+  //     clientFiles: [
+  //       './public/monster.glb'
+  //     ]
+  //   }
+  // },
   build: {
     target: 'esnext',
     minify: 'esbuild',
-    sourcemap: false,
+    sourcemap: true,
     outDir: 'dist',
     assetsDir: 'assets',
     rollupOptions: {
+      treeshake: true,
       output: {
         manualChunks: {
           // Konfiguracja podziału kodu na osobne pliki
+
         },
       },
     },

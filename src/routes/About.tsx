@@ -1,6 +1,9 @@
 import { motion } from 'framer-motion'
 import { Title, Meta } from 'react-head'
 
+//@ts-ignore
+import Image from '../assets/ja1_resized.png?w=200&format=webp'
+
 export default function About() {
 
 
@@ -24,11 +27,11 @@ export default function About() {
 
             <div className='w-full w-30 flex flex-col items-center md:items-start md:flex-row md:justify-between'>
                 <div className='w-full md:w-auto font-bold'>
-                    <p className='text-3xl'>Filip Urzoń</p>
+                    <p className='text-4xl'>Filip Urzoń</p>
                     <p>Programmer / Graphic designer / Artist</p>
                 </div>
 
-                <img src="ja1.png" alt="Image of me" width={20} className='w-24 h-24 rounded-full mt-10' />
+                <img src={Image} alt="Image of me" width={20} className='w-24 h-24 rounded-full mt-10' />
 
             </div>
 

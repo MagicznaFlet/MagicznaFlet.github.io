@@ -27,6 +27,11 @@ const router = createBrowserRouter([
       {
         path: '/skills',
         element: <Skills />,
+      },
+
+      {
+        path: '*',
+        element: <NotFound />
       }
     ]
   },
