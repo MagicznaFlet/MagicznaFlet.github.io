@@ -15,7 +15,7 @@ export default defineConfig({
 
   })],
   mode: 'production',
-  base: '/react-portfolio/',
+  base: '/',
   // server: {
   //   warmup: {
   //     clientFiles: [
